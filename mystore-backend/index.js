@@ -20,7 +20,8 @@ DBConnect()
 const PORT = process.env.PORT || 5000;
 
 app.get('/', (req, res) => {
-    res.status(200).json({ msg: 'My Store backend API' })
+    res.send("My Store backend API Server is running")
+    //res.status(200).json({ msg: 'My Store backend API' })
 })
 
 app.listen(PORT, () => {
