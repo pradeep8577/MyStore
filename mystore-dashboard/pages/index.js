@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className="w-full">
       <Head>
-        <title>Apni_Dukaan - Launch your Online Dukaan </title>
+        <title>MyStore - Launch your Online Store </title>
       </Head>
 
       <div className="fixed bg-white z-50 h-20 w-full border-b flex justify-around items-center">
