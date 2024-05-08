@@ -6,13 +6,13 @@ const cors = require('cors')
 const cookieParser = require('cookie-parser')
 require('dotenv').config()
 
-const corsOption = {
-    credentials: true,
-    origin: "*",
-}
-
 app.use(express.json({ limit: '5mb' }))
-app.use(cors(corsOption))
+app.use(
+    cors({
+      origin: "*",
+      credentials: true,
+    })
+  );
 app.use(cookieParser())
 app.use(router)
 DBConnect()
