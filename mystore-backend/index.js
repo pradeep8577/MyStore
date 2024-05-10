@@ -8,16 +8,25 @@ require('dotenv').config()
 
 app.use(express.json({ limit: '5mb' }))
 app.use(
-    cors({
-      origin: "*",
-      credentials: true,
-    })
-  );
+  cors({
+    origin: "*",
+    credentials: true,
+  })
+);
+
+
 app.use(cookieParser())
 app.use(router)
 DBConnect()
 
 const PORT = process.env.PORT || 5000;
+
+// // middlewares
+app.use((req, res, next) => {
+  console.log("http method->" + req.method + ",URL->" + req.url);
+  next();
+});
+
 
 app.get('/', (req, res) => {
     res.send("My Store backend API Server is running")
