@@ -11,7 +11,7 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(
   cors({
-    origin: "*",
+    origin: ['https://mystore-dashboard.vercel.app','*','lohttp://localhost:4000'],
     credentials: true,
   })
 );
