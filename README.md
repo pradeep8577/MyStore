@@ -8,6 +8,16 @@
 ### STAP-2
 - `cd mystore-dashboard`
 - `npm install`
+
+- create `.env` file
+- use your Cradincial in.env file
+
+```
+
+NEXT_PUBLIC_API_URL = http://localhost:8000
+
+```
+  
 - `npm run dev`
 
 ### STAP-3
@@ -29,6 +39,15 @@ JWT_ACCESS_TOKEN_SECRET=e6c75922913b0cca4cfbb915a8b5bf069179eb67
 ### STAP-4
 - `cd mystore-template-1`
 - `npm install`
+- - create `.env` file
+- use your Cradincial in.env file
+
+```
+
+NEXT_PUBLIC_API_URL = http://localhost:8000
+
+```
+
 - `npm run dev`
 
 
