@@ -2,10 +2,10 @@
 
 💻 How to run the app locally! 🏃
 
-### STAP-1
+### STEP-1
 `git clone https://github.com/pradeep8577/MyStore.git`
 
-### STAP-2
+### STEP-2
 - `cd mystore-dashboard`
 - `npm install`
 
@@ -20,7 +20,7 @@ NEXT_PUBLIC_API_URL = http://localhost:8000
   
 - `npm run dev`
 
-### STAP-3
+### STEP-3
 - `cd mystore-backend`
 - `npm install`
 - create `.env` file
@@ -36,7 +36,7 @@ JWT_ACCESS_TOKEN_SECRET=e6c75922913b0cca4cfbb915a8b5bf069179eb67
 ```
 - `npm run dev`
 
-### STAP-4
+### STEP-4
 - `cd mystore-template-1`
 - `npm install`
 - - create `.env` file
